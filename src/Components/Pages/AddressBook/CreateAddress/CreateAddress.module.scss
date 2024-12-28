@@ -1,0 +1,125 @@
+.wrapper {
+    display: flex;
+    background-color: #f5f5fa;
+
+    .container {
+        width: 100%;
+
+        .header {
+            font-size: 19px;
+            line-height: 21px;
+            font-weight: 300;
+            margin: 20px 0px 15px;
+        }
+
+        .content {
+            background: rgb(255, 255, 255);
+            border-radius: 4px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding: 16px;
+            display: flex;
+
+            .address_form {
+                box-shadow: none;
+                border-radius: 0px 0px 3px 3px;
+                padding: 10px 15px;
+                max-height: 650px;
+                overflow: hidden;
+            
+                .form_container {
+                    width: 600px;
+            
+                    .style_form_item {
+                        font-size: 13px;
+                        margin: 0px 0px 15px;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        color: rgb(51, 51, 51);
+            
+                        label {
+                            font-weight: 700;
+                            width: 20%;
+                        }
+            
+                        .style_input {
+                            width: 80%;
+                            border: 1px solid rgb(204, 204, 204);
+                            border-radius: 4px;
+                            height: 34px;
+                            padding: 6px 12px;
+                            line-height: 34px;
+                            outline: none;
+                        }
+            
+                        .style_area {
+                            font-family: inherit;
+                            font-size: 100%;
+                            line-height: 1.15;
+                            margin: 0px;
+                            width: 80%;
+                            border: 1px solid rgb(204, 204, 204);
+                            border-radius: 4px;
+                            padding: 6px 12px;
+                            line-height: 20px;
+                            outline: none;
+                            height: 100px;
+                        }
+            
+                        .address_type {
+                            width: 80%;
+            
+                            .radio_fake {
+                                margin-top: -4px;
+                                display: inline-block;
+                                cursor: pointer;
+                                vertical-align: middle;
+                                width: 26px;
+                                height: 24px;
+            
+                                .btn_radio_on {
+                                    width: 24px;
+                                    height: 24px;
+                                    color: #0eb8f3;
+                                }
+            
+                                .btn_radio_off {
+                                    width: 24px;
+                                    height: 24px;
+                                    color: #7b7c7c;
+                                }
+                            }
+                        }
+            
+                        .btn_group {
+                            width: 66.66%;
+                            display: flex;
+                            gap: 10px;
+            
+                            .btn_cancel {
+                                flex: 1 0 40%;
+                                background: rgb(247, 247, 24);
+                                font-size: 13px;
+                                padding: 10px 0px;
+                                border-radius: 2px;
+                                cursor: pointer;
+                            }
+            
+                            .btn_update {
+                                width: 200px;
+                                background: rgb(247, 247, 247);
+                                font-size: 13px;
+                                padding: 10px 0px;
+                                border-radius: 2px;
+                                cursor: pointer;
+                                background: rgb(0, 182, 240);
+                                color: rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.wrapper {
+    padding: 10px;
+
+    .category-content {
+        .btn-add-new {
+           margin: 15px 0;
+        }
+
+        .btn-add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon_plus {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    }
+
+    .title{
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+

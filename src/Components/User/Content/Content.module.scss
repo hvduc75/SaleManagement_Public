@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 250px);
+    gap: 12px;
+    
+    .banner{
+        width: 100%;
+        padding: 16px 11px 25px 11px;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+    }
+}

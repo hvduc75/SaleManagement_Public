@@ -1,0 +1,227 @@
+.wrapper {
+    .container {
+        width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .address_list {
+            padding: 5px 0px 0px;
+            color: rgb(51, 51, 51);
+
+            .title {
+                font-size: 15px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+
+            .address_list_text {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+
+            .address_list {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0px 0px -20px -20px;
+
+                .address_item_default,
+                .address_item {
+                    position: relative;
+                    flex: 1 0 40%;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: none;
+                    border-radius: 3px;
+                    margin: 0px 0px 20px 20px;
+                    max-width: calc(50% - 20px);
+                    padding: 10px 15px;
+
+                    .name {
+                        font-size: 15px;
+                        font-weight: bold;
+                        margin: 0px;
+                    }
+
+                    .address {
+                        height: 17px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 13px;
+                        margin-bottom: 3px;
+                    }
+
+                    .phone {
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                    }
+
+                    .action {
+                        .btn {
+                            touch-action: manipulation;
+                            cursor: pointer;
+                            user-select: none;
+                            padding: 6px 14px;
+                            text-align: center;
+                            white-space: nowrap;
+                            border-radius: 2px;
+                            outline-color: rgb(204, 204, 204);
+                            background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
+                            height: 31px;
+                            font-size: 12px;
+                        }
+
+                        .saving_address_default {
+                            margin-right: 7px;
+                            border: 1px solid rgb(2, 159, 209);
+                            color: rgb(255, 255, 255);
+                            background: rgb(0, 182, 240);
+                        }
+
+                        .saving_address {
+                            margin-right: 7px;
+                            border: 1px solid rgb(85, 86, 73);
+                            color: rgb(255, 255, 255);
+                            background: rgb(98, 100, 85);
+                        }
+
+                        .edit_address {
+                            border: 1px solid rgb(204, 204, 204);
+                            margin-right: 7px;
+                        }
+                    }
+                }
+
+                .address_item_default {
+                    border: 1px dashed rgb(0, 153, 0);
+                }
+
+                .address_item {
+                    border: 1px solid rgb(221, 221, 221);
+                }
+            }
+        }
+
+        .add_new {
+            font-size: 13px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            span {
+                color: rgb(0, 127, 240);
+                cursor: pointer;
+            }
+        }
+
+        .address_form {
+            background: rgb(247, 247, 247);
+            border: 1px solid rgb(221, 221, 221);
+            box-shadow: none;
+            border-radius: 0px 0px 3px 3px;
+            margin: 0px auto;
+            padding: 10px 15px;
+            transition: max-height 0.5s ease-out;
+            max-height: 650px;
+            overflow: hidden;
+
+            .form_container {
+                max-width: 550px;
+                margin: 0px auto;
+
+                .style_form_item {
+                    font-size: 13px;
+                    margin: 0px 0px 15px;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    color: rgb(51, 51, 51);
+
+                    label {
+                        font-weight: 700;
+                        width: 33.3333%;
+                    }
+
+                    .style_input {
+                        width: 66.6666%;
+                        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                        border: 1px solid rgb(204, 204, 204);
+                        border-radius: 4px;
+                        height: 34px;
+                        padding: 6px 12px;
+                        line-height: 34px;
+                        outline: none;
+                    }
+
+                    .style_area {
+                        font-family: inherit;
+                        font-size: 100%;
+                        line-height: 1.15;
+                        margin: 0px;
+                        width: 66.6666%;
+                        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                        border: 1px solid rgb(204, 204, 204);
+                        border-radius: 4px;
+                        padding: 6px 12px;
+                        line-height: 20px;
+                        outline: none;
+                    }
+
+                    .address_type {
+                        width: 66.66%;
+
+                        .radio_fake {
+                            margin-top: -4px;
+                            display: inline-block;
+                            cursor: pointer;
+                            vertical-align: middle;
+                            width: 26px;
+                            height: 24px;
+
+                            .btn_radio_on {
+                                width: 24px;
+                                height: 24px;
+                                color: #0eb8f3;
+                            }
+
+                            .btn_radio_off {
+                                width: 24px;
+                                height: 24px;
+                                color: #7b7c7c;
+                            }
+                        }
+                    }
+
+                    .btn_group {
+                        width: 66.66%;
+                        display: flex;
+                        gap: 10px;
+
+                        .btn_cancel {
+                            flex: 1 0 40%;
+                            background: rgb(247, 247, 24);
+                            font-size: 13px;
+                            padding: 10px 0px;
+                            border-radius: 2px;
+                            cursor: pointer;
+                        }
+
+                        .btn_update {
+                            flex: 1 0 40%;
+                            background: rgb(247, 247, 247);
+                            font-size: 13px;
+                            padding: 10px 0px;
+                            border-radius: 2px;
+                            cursor: pointer;
+                            background: rgb(0, 182, 240);
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

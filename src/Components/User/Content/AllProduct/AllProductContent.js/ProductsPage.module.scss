@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(245, 245, 250);
+    padding: 0px 0px 16px;
+    border-radius: 0px 0px 4px 4px;
+
+    .product-item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 8px;
+        border-top: 1px solid rgb(242, 242, 242);
+    }
+
+    .btn_load_more {
+        cursor: pointer;
+        display: inline-block;
+        width: 240px;
+        margin-top: 12px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: 1px solid rgb(10, 104, 255);
+        color: rgb(10, 104, 255);
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+    }
+}

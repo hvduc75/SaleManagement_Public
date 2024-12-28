@@ -1,0 +1,106 @@
+.wrapper {
+    .list_category_top {
+        background-color: rgb(245, 245, 250);
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        .path_home {
+            color: rgb(128, 128, 137);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .icon {
+            color: rgb(128, 128, 137);
+        }
+
+        .current_path {
+            color: rgb(39, 39, 42);
+        }
+    }
+
+    .container {
+        flex: 1 1 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        .title {
+            padding: 16px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+        }
+
+        .filter {
+            padding: 16px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+
+            .sort {
+                font-size: 14px;
+                line-height: 21px;
+                color: rgb(128, 128, 137);
+                margin-right: 8px;
+            }
+
+            .dropDown {
+                position: relative;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                border-radius: 20px;
+                padding: 6px 16px;
+                font-size: 14px;
+                cursor: pointer;
+                border: 1px solid rgb(128, 128, 137);
+
+                .type {
+                    margin-right: 8px;
+                }
+
+                .dropdown_menu {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 165px;
+                    right: 0;
+                    background: white;
+                    border: 1px solid rgb(200, 200, 200);
+                    border-radius: 8px;
+                    margin-top: 4px;
+                    z-index: 100;
+                    overflow: hidden;
+
+                    div {
+                        padding: 8px 12px;
+                        font-size: 14px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgb(240, 240, 240);
+                        }
+                    }
+                }
+            }
+        }
+
+        .list_product {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+
+            .cssText {
+                color: rgb(39, 39, 42);
+                font-size: 16px !important;
+                height: 100px;
+            }
+        }
+    }
+}

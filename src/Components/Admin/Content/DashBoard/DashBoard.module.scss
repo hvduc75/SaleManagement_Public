@@ -1,0 +1,53 @@
+.wrapper {
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .content_statistic {
+        display: flex;
+        gap: 25px;
+
+        .graph {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+
+            .date_container {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #eee;
+                margin: 0 20px;
+
+                .graph_title {
+                    color: #333;
+                }
+
+                .input_week {
+
+                    .calendar {
+                        border: 1px solid #cad6d8;
+                        width: 150px;
+                        height: 28px;
+                        display: flex;
+                        align-items: center;
+
+                        .searchDate {
+                            border-right: 1px solid #cad6d8;
+                            width: 124px;
+                            padding: 1px 10px;
+                        }
+
+                        .icon_calendar {
+                            width: 16px;
+                            height: 16px;
+                            margin: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

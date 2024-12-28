@@ -1,0 +1,65 @@
+.wrapper {
+    position: relative;
+
+    .account {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        cursor: pointer;
+        position: relative;
+        border-radius: 8px;
+        text-decoration: none;
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &:hover {
+            background-color: rgba(117, 117, 230, 0.12);
+        }
+
+        .shortcut-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+            border-radius: 50%;
+            color: rgb(128, 128, 137);
+        }
+    }
+
+    .account-content {
+        border: 1px solid rgb(239, 239, 239);
+        background: rgb(255, 255, 255);
+        width: 240px;
+        list-style: none;
+        padding: 10px 0px;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+        position: absolute;
+        top: -10px;
+        transform: translateX(-100%);
+        border-radius: 8px;
+
+        .menu-item {
+            cursor: pointer;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0px;
+            padding: 8px 16px;
+            color: rgb(39, 39, 42);
+            font-size: 14px;
+            line-height: 150%;
+            font-weight: 400;
+            text-decoration: none;
+
+            &:hover {
+                background-color: rgba(39, 39, 42, 0.12);
+            }
+        }
+    }
+}

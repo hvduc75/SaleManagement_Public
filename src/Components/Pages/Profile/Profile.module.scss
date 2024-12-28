@@ -1,0 +1,138 @@
+.wrapper {
+    display: flex;
+    background-color: #f5f5fa;
+
+    .container {
+        width: 100%;
+
+        .header {
+            font-size: 19px;
+            line-height: 21px;
+            font-weight: 300;
+            margin: 20px 0px 15px;
+        }
+
+        .content {
+            background: rgb(255, 255, 255);
+            border-radius: 4px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding: 16px;
+            display: flex;
+
+            .info {
+                flex: 1;
+                padding-right: 50px;
+
+                table {
+                    width: 100%;
+                }
+
+                .title {
+                    color: rgba(85, 85, 85, 0.8);
+                    min-width: 20%;
+                    overflow: hidden;
+                    padding-bottom: 30px;
+                    text-align: right;
+                    white-space: nowrap;
+                    width: 175px;
+                }
+
+                .property {
+                    box-sizing: border-box;
+                    padding-bottom: 30px;
+                    padding-left: 20px;
+                    width: calc(100% - 175px);
+
+                    .input_Name {
+                        background: none;
+                        outline: none;
+                        padding: 12px;
+                        border: 1px solid #dbdbdb;
+                        width: 100%;
+                    }
+
+                    button {
+                        border: 0px;
+                        height: 40px;
+                        border-radius: 4px;
+                        color: rgb(255, 255, 255);
+                        font-size: 14px;
+                        background-color: rgb(11, 116, 229);
+                        cursor: pointer;
+                        width: 176px;
+                    }
+                }
+
+                .gender {
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        font-weight: 400;
+                        margin: 0;
+                        padding: 0 10px;
+                        cursor: pointer;
+                    }
+
+                    input {
+                        width: 18px;
+                        height: 18px;
+                        margin: 0;
+                    }
+                }
+
+                .birthDay {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    width: 100%;
+
+                    .css_select {
+                        width: 30%;
+                        background: #fff;
+                        border: 1px solid rgba(0, 0, 0, 0.09);
+                        border-radius: 2px;
+                        color: #696969;
+                        flex: 1;
+                        height: 45px;
+                        padding: 1px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                    }
+                }
+            }
+
+            .avatar {
+                width: 300px;
+                border-left: 0.0625rem solid #efefef;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+
+                .prevImage {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                .btnUpload {
+                    background: #fff;
+                    border: 1px solid rgba(0, 0, 0, 0.09);
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.03);
+                    color: #555;
+                    outline: 0;
+                    padding: 10px 20px;
+                    height: 40px;
+                    margin: 20px 0;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

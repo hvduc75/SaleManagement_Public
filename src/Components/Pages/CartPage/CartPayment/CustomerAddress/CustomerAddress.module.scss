@@ -1,0 +1,71 @@
+.location {
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 20px;
+
+    .block_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .header_title {
+            color: rgb(128, 128, 137);
+        }
+
+        .btn_change {
+            color: rgb(11, 116, 229);
+        }
+    }
+
+    .customer_info {
+        display: flex;
+        align-items: center;
+        color: rgb(68 56 61);
+        margin-bottom: 2px;
+        font-weight: 600;
+
+        .customer_name {
+            margin: 0px;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+
+        i {
+            display: block;
+            width: 1px;
+            height: 20px;
+            background-color: rgb(235, 235, 240);
+            margin: 0px 8px;
+        }
+
+        .customer_phone {
+            margin: 0px;
+        }
+    }
+    
+    .address {
+        color: rgb(128, 128, 137);
+
+        .address_type {
+            color: rgb(0, 171, 86);
+            background-color: rgb(239, 255, 244);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 0px 6px;
+            border-radius: 100px;
+            margin-right: 4px;
+            height: 18px;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+    }
+}

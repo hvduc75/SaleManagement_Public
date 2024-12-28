@@ -1,0 +1,156 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .product-item {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        color: rgb(36, 36, 36);
+        border: 1px solid rgb(235, 235, 240);
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        position: relative;
+
+        .wrapper-image{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .bg-image {
+                position: absolute; 
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 2; 
+                opacity: 1;
+            }
+    
+            .product-image {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                z-index: 1; 
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+        }
+
+        .product-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 8px;
+            gap: 4px;
+            flex: 1 1 0%;
+
+            .product-description {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .description-top {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    height: 58px;
+
+                    .product-name {
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        line-clamp: 2;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 12px;
+                        line-height: 150%;
+                    }
+
+                    .product-rating {
+                        display: flex;
+                        height: 18px;
+
+                        .product-star {
+                            fill: rgb(255, 196, 0);
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .description-bot {
+                    sup {
+                        font-size: 75%;
+                        line-height: 0;
+                        position: relative;
+                        vertical-align: baseline;
+                    }
+
+                    .product-price-new {
+                        text-align: left;
+                        font-size: 16px;
+                        line-height: 150%;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        color: rgb(255, 66, 78);
+                    }
+
+                    .product-sale {
+                        display: flex;
+                        gap: 4px;
+                        height: 18px;
+
+                        .percent-sale-off{
+                            background-color: none;
+                        }
+
+                        .percent-sale {
+                            padding: 0px 4px;
+                            border-radius: 8px;
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-weight: 500;
+                            background-color: #f5f5fa;
+                            color: #272727;
+                        }
+
+                        .product-price-old {
+                            font-family: Inter;
+                            font-size: 10px;
+                            color: #808089;
+                            text-decoration-line: line-through;
+                        }
+                    }
+                }
+            }
+
+            .product-footer {
+                margin-top: 15px;
+                display: flex;
+                gap: 4px;
+                border-top: 1px solid rgb(235, 235, 240);
+                padding-top: 6px;
+                align-items: center;
+
+                span {
+                    flex: 1 0 0px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}

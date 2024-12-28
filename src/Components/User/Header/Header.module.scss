@@ -1,0 +1,199 @@
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0 0 0;
+    padding-bottom: 8px;
+    background-color: #fff;
+
+    .header-left {
+        .tiki-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-desc {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 8px;
+            color: rgb(82, 62, 161);
+        }
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+        flex: 1 0 0px;
+        margin-left: 48px;
+
+        .header-top {
+            display: flex;
+            height: auto;
+            align-items: center;
+
+            .user-shortcut {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-left: 48px;
+
+                .shortcut-icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 4px;
+                    border-radius: 50%;
+                    color: rgb(128, 128, 137);
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: rgb(128, 128, 137);
+                }
+
+                .home {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px 16px;
+                    cursor: pointer;
+                    position: relative;
+                    border-radius: 8px;
+
+                    &:hover {
+                        background-color: rgba(39, 39, 42, 0.12);
+                    }
+                }
+
+                .activeHome {
+                    .shortcut-icon {
+                        color: rgb(10, 104, 255);
+                    }
+
+                    span {
+                        color: rgb(10, 104, 255);
+                    }
+
+                    &:hover {
+                        background-color: rgba(0, 96, 255, 0.12);
+                    }
+                }
+
+                .cart {
+                    position: relative;
+                    display: flex;
+                    width: 40px;
+                    height: 40px;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 22px;
+                    border-radius: 8px;
+                    cursor: pointer;
+
+                    .shortcut-icon {
+                        color: rgb(10, 104, 255);
+                    }
+
+                    &:hover {
+                        background-color: rgba(0, 96, 255, 0.12);
+                    }
+                }
+
+                .itemCart {
+                    position: absolute;
+                    height: 18px;
+                    width: 18px;
+                    left: 23px;
+                    top: -7px;
+                    color: rgb(255, 255, 255);
+                    background: rgb(255, 66, 79);
+                    border-radius: 8px;
+                    display: inline-block;
+                    text-align: center;
+                    font-weight: 700;
+                    line-height: 17px;
+                }
+
+                .cart::before {
+                    content: '';
+                    display: block;
+                    height: 20px;
+                    position: absolute;
+                    left: -12px;
+                    border: 1px solid rgb(235, 235, 240);
+                }
+            }
+        }
+
+        .header-bottom {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+
+            .quick-links {
+                display: flex;
+                height: 20px;
+                width: 712px;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                overflow: hidden;
+                gap: 12px;
+
+                span {
+                    display: block;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: rgb(128, 128, 137);
+                    white-space: nowrap;
+                    cursor: pointer;
+                }
+            }
+
+            .location {
+                max-width: 348px;
+                display: flex;
+                flex: 0 0 348px;
+                align-items: center;
+                cursor: pointer;
+                justify-content: flex-end;
+                margin-bottom: 3px;
+                margin-right: 8px;
+
+                .icon{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 4px;
+                    color: #808089;
+                }
+
+                .title{
+                    margin: 0px;
+                    display: block;
+                    color: rgb(128, 128, 137);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    padding-right: 4px;
+                    white-space: nowrap;
+                }
+
+                .address{
+                    text-decoration: underline;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: rgb(39, 39, 42);
+                }
+            }
+        }
+    }
+}

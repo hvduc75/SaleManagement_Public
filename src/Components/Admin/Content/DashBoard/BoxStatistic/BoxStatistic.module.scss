@@ -1,0 +1,55 @@
+.statistic {
+    display: flex;
+    justify-content: space-between;
+
+    .box_container {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        min-width: 30%;
+        background-color: #2ecc71;
+        color: white;
+
+        .box_content {
+            width: calc(100% - 62px);
+            padding: 12px 0 12px 15px;
+
+            h2 {
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+
+            .css_title {
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+
+            .css_percent {
+                font-size: 85%;
+            }
+        }
+
+        .box_icon {
+            width: 62px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.1);
+
+            .css_icon {
+                width: 30px !important;
+                height: 30px;
+            }
+        }
+    }
+
+    .box_user {
+        background-color: #e74c3c;
+    }
+
+    .box_income {
+        background-color: #f39c12;
+    }
+}

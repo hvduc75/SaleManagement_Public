@@ -1,0 +1,30 @@
+.arrow {
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+
+.prev-arrow {
+    left: 96%;
+    top: 46%;
+}
+
+.next-arrow {
+    right: 96%;
+    top: 46%; 
+}
+
+.icon {
+    position: relative;
+    font-size: 20px;
+    color: blue; 
+    right: -9px;
+}

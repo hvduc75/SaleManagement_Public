@@ -1,0 +1,31 @@
+.wrapper {
+    .container_header {
+        background-color: rgb(255, 255, 255);
+
+        .inner {
+            width: 1280px;
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .container {
+        width: 1280px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 1440px !important;
+    }
+
+    .inner {
+        width: 1440px !important;
+    }
+}

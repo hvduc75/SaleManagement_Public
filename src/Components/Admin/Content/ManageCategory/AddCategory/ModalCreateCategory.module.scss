@@ -1,0 +1,44 @@
+.modal-add-category {
+    .img-preview {
+        border: 1px dashed red;
+        height: 150px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ccc;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .label-upload {
+        display: flex;
+        justify-items: center;
+        gap: 5px;
+        border: 1px solid red;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 3px 10px;
+        background: #eeeeee;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #dcdcdc;
+        }
+
+        .btn-upload {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon_plus {
+                font-size: 20px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

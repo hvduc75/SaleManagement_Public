@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1270px;
+    margin: 20px auto;
+}
+
+.success, .failed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    img{
+        width: 350px;
+    }
+
+    .view_order{
+        min-width: 200px;
+        text-align: center;
+        padding: 10px 15px;
+        color: white;
+        background-color: orange;
+    }
+
+    .continue_buy{
+        min-width: 200px;
+        text-align: center;
+        padding: 10px 15px;
+        color: white;
+        background-color: green; 
+    }
+}
+
+.error {
+    color: red;
+}
