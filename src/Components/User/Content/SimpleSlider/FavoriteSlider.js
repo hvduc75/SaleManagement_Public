@@ -1,12 +1,12 @@
 import React from 'react';
 import Slider from 'react-slick';
+import ProductCard from '../ProductCard/ProductCard';
 import classNames from 'classnames/bind';
 
-import styles from "./general.module.scss"
-import ProductCard from '../ProductCard/ProductCard';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { NextArrow, PrevArrow } from '../../../GlobalStyles/CustomSlider/CustomSlider';
+import styles from "./general.module.scss"
 
 const cx = classNames.bind(styles)
 
@@ -15,10 +15,10 @@ const FavoriteSlider = (props) => {
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: listProducts.Products?.length < 6 ? false : true,
         speed: 500,
-        slidesToShow: listProducts.length < 6 ? listProducts.length : 6,
-        slidesToScroll: listProducts.length < 6 ? listProducts.length : 6,
+        slidesToShow: listProducts.Products?.length < 6 ? listProducts.Products?.length : 6,
+        slidesToScroll: listProducts.Products?.length < 6 ? listProducts.Products?.length : 6,  
         autoplay: false,
         autoplaySpeed: 3000,
         nextArrow: <NextArrow />,
@@ -26,9 +26,9 @@ const FavoriteSlider = (props) => {
     };
 
     return (
-        <Slider {...settings}>
-            {listProducts && listProducts.length > 0 ? (
-                listProducts.map((product) => {
+        <Slider className={cx('customize-css')} {...settings}>
+            {listProducts.Products && listProducts.Products.length > 0 ? (
+                listProducts.Products.map((product) => {
                     return (
                         <div className={cx('style_card')}>
                             <ProductCard key={product.id} product={product} />

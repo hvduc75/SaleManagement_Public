@@ -15,10 +15,10 @@ const ProductSlider = (props) => {
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: listProducts.DT?.length < 6 ? false : true,
         speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 6,
+        slidesToShow: listProducts.DT?.length < 6 ? listProducts.DT?.length : 6,
+        slidesToScroll: listProducts.DT?.length < 6 ? listProducts.DT?.length : 6,
         autoplay: false,
         autoplaySpeed: 3000,
         nextArrow: <NextArrow />,
@@ -26,7 +26,7 @@ const ProductSlider = (props) => {
     };
 
     return (
-        <Slider {...settings}>
+        <Slider className={cx('customize-css')} {...settings}>
             {listProducts.DT && listProducts.DT.length > 0 ? (
                 listProducts.DT.map((item) => {
                     return (

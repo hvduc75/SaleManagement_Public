@@ -34,3 +34,9 @@ a {
     color: var(--text-color);
     text-decoration: none;
 }
+
+.customize-css .slick-slide {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 185px !important;
+}

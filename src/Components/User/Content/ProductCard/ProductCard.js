@@ -83,8 +83,8 @@ function ProductCard(props) {
                             <div className={cx('description-bot')}>
                                 <div className={cx('product-price-new', cssPrice)}>
                                     {product.price_current
-                                        ? formatPrice(product.price_current)
-                                        : formatPrice(product.price)}
+                                        ? formatPrice(+product.price_current)
+                                        : formatPrice(+product.price)}
                                     <sup>đ</sup>
                                 </div>
                                 <div className={cx('product-sale')}>
@@ -96,7 +96,7 @@ function ProductCard(props) {
                                         {product.sale ? product.sale + '%' : ''}
                                     </div>
                                     <div className={cx('product-price-old')}>
-                                        {product.price_current ? formatPrice(product.price) : ''}
+                                        {product.price_current ? formatPrice(+product.price) : ''}
                                         {product.price_current ? <sup>đ</sup> : <sup></sup>}
                                     </div>
                                 </div>

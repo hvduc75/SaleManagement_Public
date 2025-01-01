@@ -20,7 +20,7 @@ function ProductInterest(props) {
         if (data && data.EC !== 0) {
             toast.error(data.EM);
         }
-        setListProducts(data.DT[0].Products);
+        setListProducts(data.DT[0]);
     };
     return (
         <div className={cx('wrapper')}>
