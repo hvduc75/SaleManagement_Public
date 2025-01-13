@@ -71,7 +71,7 @@ function Header(props) {
                         <span>sách</span>
                         <span>thể thao</span>
                     </div>
-                    {Object.keys(userInfor).length !== 0 && userInfor.id && (
+                    {userInfor.id && (
                         <div className={cx('location')}>
                             <SlLocationPin className={cx('icon')} />
                             <h4 className={cx('title')}>Giao đến:</h4>
